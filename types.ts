@@ -8,13 +8,22 @@ export interface ConsultationOption {
   exclusions: string[];
 }
 
+export interface ProductDetailSection {
+  title: string;
+  items: string[];
+}
+
 export interface Product {
   id: string;
   title: string;
   type: 'Free' | 'Paid';
   description: string;
+  longDescription?: string;
   price?: string;
   tagline?: string;
+  whatItIs?: string[];
+  whatItIsNot?: string[];
+  features?: string[];
 }
 
 export interface Article {

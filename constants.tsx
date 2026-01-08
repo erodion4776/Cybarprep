@@ -58,20 +58,60 @@ export const PRODUCTS: Product[] = [
     type: 'Paid',
     tagline: 'Coming Soon',
     description: 'Master the Multistate Performance Test with our precision-engineered strategic guide.',
-    price: 'TBD'
+    longDescription: 'The Golden MPT Strategy eBook is the culmination of years of observing grader patterns. It strips away the unnecessary fluff of traditional prep and provides a mechanical, repeatable system for producing high-scoring memos, briefs, and letters under intense time pressure.',
+    price: 'TBD',
+    whatItIs: [
+      'A mechanical system for MPT formatting',
+      'Time-management protocols for the 90-minute window',
+      'Strategic reading techniques for the Library and File',
+      'Annotated examples of high-scoring answers'
+    ],
+    whatItIsNot: [
+      'A collection of old practice MPTs (those are free online)',
+      'A legal writing textbook for law school',
+      'A substitute for actual timed practice',
+      'A "magic bullet" that replaces hard work'
+    ],
+    features: [
+      'The "File-First" Reading Strategy',
+      'Memo & Brief Templates (Mechanical)',
+      'Grader Psychology Insights',
+      'Common Traps & How to Avoid Them'
+    ]
   },
   {
     id: 'final-strategy-course',
     title: '1-Month Bar Exam Final Strategy Course',
     type: 'Paid',
     description: 'A focused intensive for the last 30 days. Includes downloadable schedules, strategy videos, and optional 1-on-1 access.',
-    price: '$299'
+    longDescription: 'The Final Strategy Course is designed for the examinee who is doing the work but feeling overwhelmed by the volume. This course teaches you how to transition from "learning" to "performing." We focus on the high-yield mechanics that actually move the needle on your score in the final 4 weeks.',
+    price: '$299',
+    whatItIs: [
+      'A transition plan from learning to execution',
+      'High-yield subject prioritization',
+      'Daily "Mechanical Drills" for MEE and MBE',
+      'A psychological framework for the final stretch'
+    ],
+    whatItIsNot: [
+      'A full-substantive law course (like Barbri/Themis)',
+      'A replacement for doing thousands of MBE questions',
+      'A tutor-on-call service',
+      'A basic "how to study" guide'
+    ],
+    features: [
+      'The "Rule of 3" MEE Strategy',
+      'MBE Pattern Recognition Drills',
+      'Custom 4-Week "Final Stretch" Schedule',
+      '5 Strategic Deep-Dive Video Modules'
+    ]
   },
   {
     id: 'free-mpt-checklist',
     title: 'Essential MPT Checklist',
     type: 'Free',
-    description: 'Never miss a formatting mark again. A one-page PDF guide to MPT success.'
+    description: 'Never miss a formatting mark again. A one-page PDF guide to MPT success.',
+    whatItIs: ['A one-page formatting guide', 'Quick-reference for memo headers'],
+    whatItIsNot: ['A comprehensive strategy guide']
   }
 ];
 
