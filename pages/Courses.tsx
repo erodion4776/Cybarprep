@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, PlayCircle, Lock, Mail, ChevronRight, ShieldAlert } from 'lucide-react';
