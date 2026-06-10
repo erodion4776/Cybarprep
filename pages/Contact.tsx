@@ -2,6 +2,7 @@
 import React from 'react';
 import { Mail, Phone, Calendar, Send, ShieldCheck, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import NewsletterForm from '../components/NewsletterForm';
 
 const Contact: React.FC = () => {
   return (
@@ -83,6 +84,9 @@ const Contact: React.FC = () => {
               <div className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                 Status: Accepting Clients for July 2024
               </div>
+            </div>
+            <div className="mt-8">
+              <NewsletterForm />
             </div>
           </div>
 

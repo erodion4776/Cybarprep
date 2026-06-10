@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
+import NewsletterForm from './NewsletterForm';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -141,6 +142,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <p className="text-slate-400 max-w-md text-sm leading-relaxed mb-6">
                 Strategic Bar Exam Guidance for the Final Stretch. Independent, focused, and practical support for aspiring attorneys.
               </p>
+              <NewsletterForm />
             </div>
             <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-inner">
               <h3 className="text-sm font-bold uppercase tracking-widest text-slate-300 mb-3">Positioning Statement</h3>
