@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Check, X, Info, Clock, ExternalLink } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CONSULTATIONS } from '../constants';
 
 const Consultations: React.FC = () => {
@@ -45,7 +45,7 @@ const Consultations: React.FC = () => {
             <motion.div 
               key={opt.id} 
               variants={item}
-              whileHover={{ y: -10, shadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
+              whileHover={{ y: -10, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
               className="bg-white rounded-2xl shadow-sm border border-gray-200 flex flex-col transition-all duration-300"
             >
               <div className="p-8 border-b border-gray-100">

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronLeft, CheckCircle2, XCircle, ShoppingCart, ShieldCheck, ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { PRODUCTS } from '../constants';
 
 const ProductDetail: React.FC = () => {

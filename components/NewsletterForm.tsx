@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const NewsletterForm: React.FC = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'subscribing' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -16,13 +17,14 @@ const NewsletterForm: React.FC = () => {
       const res = await fetch("https://xtop-retail.onrender.com/api/external/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email, siteKey: SITE_KEY })
+        body: JSON.stringify({ name, email, siteKey: SITE_KEY })
       });
       const data = await res.json();
 
       if (res.ok && data.success) {
         setStatus('success');
         setMessage("🎉 " + data.message);
+        setName('');
         setEmail('');
       } else {
         setStatus('error');
@@ -40,12 +42,20 @@ const NewsletterForm: React.FC = () => {
       <p className="text-sm text-slate-400 mb-4">Get the latest updates and resources delivered to your inbox.</p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <input 
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Enter your name" 
+          required 
+          className="px-4 py-3 text-sm border border-slate-600 rounded-lg outline-none bg-slate-900 text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 text-left"
+        />
+        <input 
           type="email" 
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email" 
           required 
-          className="px-4 py-3 text-sm border border-slate-600 rounded-lg outline-none bg-slate-900 text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500"
+          className="px-4 py-3 text-sm border border-slate-600 rounded-lg outline-none bg-slate-900 text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 text-left"
         />
         <button 
           type="submit" 

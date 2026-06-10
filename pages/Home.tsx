@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Target, CheckCircle, ArrowRight, Shield, Zap, Scale } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 const IndependentLogo = () => (
   <svg 

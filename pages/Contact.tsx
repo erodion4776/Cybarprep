@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Mail, Phone, Calendar, Send, ShieldCheck, MapPin } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import NewsletterForm from '../components/NewsletterForm';
 
 const Contact: React.FC = () => {
